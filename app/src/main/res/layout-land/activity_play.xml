@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_interface"
+    tools:context=".PlayActivity">
+
+    <ImageView
+        android:id="@+id/levelCountImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/points" />
+
+    <TextView
+        android:id="@+id/levelCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/levelCountImage"
+        android:layout_alignTop="@id/levelCountImage"
+        android:layout_alignEnd="@id/levelCountImage"
+        android:layout_alignBottom="@id/levelCountImage"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/hold_layout"
+        android:id="@+id/hold"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.jawnnypoo.physicslayout.PhysicsRelativeLayout
+        android:id="@+id/physics_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bounds="true"
+        app:boundsSize="50dp"
+        app:gravityX="0.0"
+        app:gravityY="9.8"
+        app:physics="false">
+
+    </com.jawnnypoo.physicslayout.PhysicsRelativeLayout>
+
+</RelativeLayout>

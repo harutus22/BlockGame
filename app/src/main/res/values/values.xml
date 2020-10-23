@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="slot" type="id"/>
+    <item name="targetOne" type="id"/>
+    <item name="targetTwo" type="id"/>
+    <item name="platformOne" type="id"/>
+    <item name="platformTwo" type="id"/>
+    <item name="platformThree" type="id"/>
+    <item name="platformFour" type="id"/>
+</resources>
